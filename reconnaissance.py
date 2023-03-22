@@ -20,7 +20,7 @@ reconng_ = open("recon-ng_.txt","r")
 
 ip_list = []
 
-myShodan = Shodan('7iMFmNtwrNRRX2XKfrSw4kGQ4TfwwKes')
+myShodan = Shodan('')
 kingfahd = myShodan.search("kfupm.edu.sa")
 for match in kingfahd["matches"]:
     if isinstance(match,dict):
