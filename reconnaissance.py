@@ -20,6 +20,7 @@ reconng_ = open("recon-ng_.txt","r")
 
 ip_list = []
 
+#getting ips from Shodan
 myShodan = Shodan('')
 kingfahd = myShodan.search("kfupm.edu.sa")
 for match in kingfahd["matches"]:
@@ -64,7 +65,7 @@ for host in hosts:
         #   failed to get ip for {the_host}
         continue
 
-#saving all ips found from subfinder,sublister,recon-ng,theharvester
+#saving all ips found from subfinder,sublister,recon-ng,theharvester,shodan
 #with no duplicates 
 for an_ip in ip_list:
     ips.write(an_ip+"\n")
