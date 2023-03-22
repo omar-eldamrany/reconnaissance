@@ -85,13 +85,5 @@ emailsfile.close()
 
 print(f'emails found {len(emails)}')
 print(f'unique ips found {sum(1 for line in open("ips.txt"))}')
-
-
-ip_list = []
-
-print(myShodan.info())
-
-
-
-print(ip_list)                        
+                   
 
